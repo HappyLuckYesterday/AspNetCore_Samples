@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace HelloAspNetCoreMac
+namespace Samples.AspNetCore.Facade
 {
     public class Program
     {

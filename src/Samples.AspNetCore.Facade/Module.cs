@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Solid.Practices.Modularity;
 
-namespace HelloAspNetCoreMac
+namespace Samples.AspNetCore.Facade
 {
     class Module : ICompositionModule<IServiceCollection>
     {

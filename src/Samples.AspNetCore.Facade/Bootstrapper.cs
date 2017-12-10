@@ -2,7 +2,7 @@
 using LogoFX.Server.Bootstrapping;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HelloAspNetCoreMac
+namespace Samples.AspNetCore.Facade
 {
     public class Bootstrapper : BootstrapperBase
     {
