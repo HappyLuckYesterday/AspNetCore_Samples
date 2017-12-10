@@ -46,5 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.AspNetCore.Api\Samples.AspNetCore.Api.csproj" />
+    <ProjectReference Include="..\Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj" />
   </ItemGroup>
 </Project>

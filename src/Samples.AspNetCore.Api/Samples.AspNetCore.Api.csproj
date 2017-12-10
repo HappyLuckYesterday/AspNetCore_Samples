@@ -15,4 +15,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj" />
+  </ItemGroup>
 </Project>
