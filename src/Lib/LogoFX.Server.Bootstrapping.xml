@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LogoFX.Server.Bootstrapping</name>
+    </assembly>
+    <members>
+        <member name="P:LogoFX.Server.Bootstrapping.BootstrapperBase.ModulesPath">
+            <summary>
+            Gets the path of composition modules that will be discovered during bootstrapper configuration.
+            </summary>
+        </member>
+        <member name="P:LogoFX.Server.Bootstrapping.BootstrapperBase.Prefixes">
+            <summary>
+            Gets the prefixes of the modules that will be used by the module registrator
+            during bootstrapper configuration. Use this to implement efficient discovery.
+            </summary>
+            <value>
+            The prefixes.
+            </value>
+        </member>
+        <member name="P:LogoFX.Server.Bootstrapping.BootstrapperBase.Modules">
+            <summary>
+            Gets the list of modules that were discovered during bootstrapper configuration.
+            </summary>
+            <value>
+            The list of modules.
+            </value>
+        </member>
+        <member name="M:LogoFX.Server.Bootstrapping.BootstrapperBase.Use(Solid.Practices.Middleware.IMiddleware{LogoFX.Server.Bootstrapping.BootstrapperBase})">
+            <summary>
+            Extends the functionality by using the specified middleware.
+            </summary>
+            <param name="middleware">The middleware.</param>
+            <returns></returns>
+        </member>
+        <member name="P:LogoFX.Server.Bootstrapping.BootstrapperBase.Assemblies">
+            <summary>
+            Gets the assemblies that will be inspected for the application components.
+            </summary>
+            <value>
+            The assemblies.
+            </value>
+        </member>
+        <member name="M:LogoFX.Server.Bootstrapping.BootstrapperBase.OnConfigureAssemblyResolution">
+            <summary>
+            Override this to provide custom assembly namespaces collection.
+            </summary>
+        </member>
+    </members>
+</doc>
