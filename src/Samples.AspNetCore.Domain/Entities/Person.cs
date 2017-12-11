@@ -1,4 +1,4 @@
-﻿namespace Samples.AspNetCore.Domain
+﻿namespace Samples.AspNetCore.Domain.Entities
 {
     public class Person
     {        

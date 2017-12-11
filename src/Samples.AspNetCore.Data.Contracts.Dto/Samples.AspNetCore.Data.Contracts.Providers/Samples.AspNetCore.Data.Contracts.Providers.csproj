@@ -14,7 +14,6 @@
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\IPersonProvider.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.AssemblyInfo.cs" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
   </ItemGroup>
 </Project>

@@ -6,9 +6,20 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\bin\Debug</OutputPath>
+    <NoStdLib>false</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\bin\Release</OutputPath>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithFake|AnyCPU' ">
+    <IntermediateOutputPath>obj\DebugWithFake</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\DebugWithFake</OutputPath>
+    <DefineConstants>#DEBUGWITHFAKE</DefineConstants>
+    <NoWarn></NoWarn>
+    <NoStdLib>false</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -47,5 +58,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Samples.AspNetCore.Api\Samples.AspNetCore.Api.csproj" />
     <ProjectReference Include="..\Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Fake.Providers\Samples.AspNetCore.Data.Fake.Providers.csproj" Condition="'$(Configuration)'=='DebugWithFake'" />
   </ItemGroup>
 </Project>

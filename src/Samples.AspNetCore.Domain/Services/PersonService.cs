@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Samples.AspNetCore.Data.Contracts.Providers;
+using Samples.AspNetCore.Domain.Entities;
 
 namespace Samples.AspNetCore.Domain.Services
 {
@@ -9,13 +12,16 @@ namespace Samples.AspNetCore.Domain.Services
 
     public class PersonService : IPersonService
     {
-        public PersonService()
+        readonly IPersonProvider _personsProvider;
+
+        public PersonService(IPersonProvider personsProvider)
         {
+            _personsProvider = personsProvider;
         }
 
         public IEnumerable<Person> GetPersons()
         {
-            throw new System.NotImplementedException();
+            return _personsProvider.GetPersons().Select(t => new Person(t.FirstName, t.LastName));
         }
     }
 }

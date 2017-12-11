@@ -14,7 +14,12 @@
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\IPersonProvider.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.AssemblyInfo.cs" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Providers\Samples.AspNetCore.Data.Contracts.Providers.csproj" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Attest.Fake.Builders" Version="1.2.1-rc1" />
+    <PackageReference Include="Attest.Fake.LightMock" Version="1.2.1-rc1" />
+    <PackageReference Include="Attest.Fake.Setup" Version="1.2.1-rc1" />
   </ItemGroup>
 </Project>
