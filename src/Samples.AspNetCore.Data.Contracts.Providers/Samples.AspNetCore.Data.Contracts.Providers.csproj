@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;DebugWithFake</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithFake|AnyCPU' ">
@@ -14,6 +15,6 @@
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
   </ItemGroup>
 </Project>

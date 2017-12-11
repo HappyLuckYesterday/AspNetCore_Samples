@@ -2,9 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Configurations>Debug;Release;DebugWithFake</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug</OutputPath>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithFake|AnyCPU'">
     <OutputPath>..\bin\Debug</OutputPath>
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
@@ -16,8 +22,8 @@
     <IntermediateOutputPath>obj\DebugWithFake</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\DebugWithFake</OutputPath>
-    <DefineConstants>#DEBUGWITHFAKE</DefineConstants>
+    <OutputPath>..\bin\DebugWithFake</OutputPath>
+    <DefineConstants>DEBUGWITHFAKE;NETCOREAPP2_0</DefineConstants>
     <NoWarn></NoWarn>
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
@@ -58,6 +64,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Samples.AspNetCore.Api\Samples.AspNetCore.Api.csproj" />
     <ProjectReference Include="..\Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj" />
-    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Fake.Providers\Samples.AspNetCore.Data.Fake.Providers.csproj" Condition="'$(Configuration)'=='DebugWithFake'" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Fake.Providers\Samples.AspNetCore.Data.Fake.Providers.csproj" Condition="'$(Configuration)'=='DebugWithFake'"/>
   </ItemGroup>
 </Project>

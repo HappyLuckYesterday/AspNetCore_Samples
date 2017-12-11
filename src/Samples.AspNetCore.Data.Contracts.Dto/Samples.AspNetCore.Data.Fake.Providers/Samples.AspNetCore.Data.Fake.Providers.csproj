@@ -15,8 +15,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
-    <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Providers\Samples.AspNetCore.Data.Contracts.Providers.csproj" />
-    <ProjectReference Include="..\Samples.AspNetCore.Data.Fake.ProviderBuilders\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Attest.Fake.Builders" Version="1.2.1-rc1" />
