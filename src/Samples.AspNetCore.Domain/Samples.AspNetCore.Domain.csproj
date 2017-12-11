@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Configurations>Debug;Release;DebugWithFake</Configurations>
+    <Configurations>Debug;Release;DebugWithFake;DebugWithReal</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithFake|AnyCPU' ">

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Configurations>Debug;Release;DebugWithFake</Configurations>
+    <Configurations>Debug;Release;DebugWithFake;DebugWithReal</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWithFake|AnyCPU' ">
@@ -14,102 +14,4 @@
     <NoWarn></NoWarn>
     <NoStdLib>false</NoStdLib>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\IPersonProvider.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.AssemblyInfo.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\PersonProviderBuilder.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.Providers\FakePersonProvider.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.Providers\Module.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.AssemblyInfo.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.AssemblyInfo.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.AssemblyInfo.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.AssemblyInfo.cs" />
-    <Compile Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.dll" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.deps.json" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Samples.AspNetCore.Data.Contracts.Providers.csproj.nuget.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Samples.AspNetCore.Data.Contracts.Providers.csproj.nuget.g.props" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Samples.AspNetCore.Data.Contracts.Providers.csproj.nuget.g.targets" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\project.assets.json" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.AssemblyInfoInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csproj.CopyComplete" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csproj.CoreCompileInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csproj.FileListAbsolute.txt" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csprojResolveAssemblyReference.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.nuget.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.nuget.g.props" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.nuget.g.targets" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\project.assets.json" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Samples.AspNetCore.Data.Fake.Providers.csproj.nuget.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Samples.AspNetCore.Data.Fake.Providers.csproj.nuget.g.props" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Samples.AspNetCore.Data.Fake.Providers.csproj.nuget.g.targets" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\project.assets.json" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.dll" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.deps.json" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.AssemblyInfoInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csproj.CopyComplete" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csproj.CoreCompileInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csproj.FileListAbsolute.txt" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.csprojResolveAssemblyReference.cache" />
-    <None Remove="Samples.AspNetCore.Data.Contracts.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.deps.json" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.deps.json" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.AssemblyInfoInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.CopyComplete" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.CoreCompileInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.FileListAbsolute.txt" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csprojResolveAssemblyReference.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.AssemblyInfoInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.CopyComplete" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.CoreCompileInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj.FileListAbsolute.txt" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.csprojResolveAssemblyReference.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.ProviderBuilders\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.deps.json" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Dto.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Contracts.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.ProviderBuilders.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.deps.json" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\bin\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.AssemblyInfoInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csproj.CopyComplete" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csproj.CoreCompileInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csproj.FileListAbsolute.txt" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csprojResolveAssemblyReference.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.dll" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\Debug\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.pdb" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.AssemblyInfoInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csproj.CopyComplete" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csproj.CoreCompileInputs.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csproj.FileListAbsolute.txt" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.csprojResolveAssemblyReference.cache" />
-    <None Remove="Samples.AspNetCore.Data.Fake.Providers\obj\DebugWithFake\netstandard2.0\Samples.AspNetCore.Data.Fake.Providers.dll" />
-  </ItemGroup>
 </Project>
