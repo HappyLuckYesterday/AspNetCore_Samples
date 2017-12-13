@@ -31,7 +31,11 @@ namespace Samples.AspNetCore.Facade
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            app.UseSwagger()
+                .UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                }).UseMvc();
         }
     }
 }

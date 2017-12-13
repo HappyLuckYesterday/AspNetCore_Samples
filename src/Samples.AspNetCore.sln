@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Facade", "Samples.AspNetCore.Facade\Samples.AspNetCore.Facade.csproj", "{89F6A0EA-6E06-4196-ADF5-65BD8B2BCBC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Facade", "Samples.AspNetCore.Facade\Samples.AspNetCore.Facade.csproj", "{89F6A0EA-6E06-4196-ADF5-65BD8B2BCBC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Api", "Samples.AspNetCore.Api\Samples.AspNetCore.Api.csproj", "{8F649A6D-E62C-4FEF-87DA-96BE017455DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Api", "Samples.AspNetCore.Api\Samples.AspNetCore.Api.csproj", "{8F649A6D-E62C-4FEF-87DA-96BE017455DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{71A138D4-CEBC-440E-8A68-4CEEAF4321FD}"
 EndProject
@@ -14,23 +14,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{01A22E52-B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{C5A08AF8-5900-4E1A-967B-306CB5416BB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Data.Contracts.Dto", "Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Contracts.Dto.csproj", "{5F336615-18E1-437A-83F1-EA26A4421891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Data.Contracts.Dto", "Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Contracts.Dto.csproj", "{5F336615-18E1-437A-83F1-EA26A4421891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Domain", "Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj", "{6FCF5693-2838-431D-979D-1B32A8F9E3F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Domain", "Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj", "{6FCF5693-2838-431D-979D-1B32A8F9E3F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{ABDE5425-F25D-46DD-9833-F207F9F135F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fake", "Fake", "{DAD5261C-E023-4AE5-A053-8D889CE32CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Data.Contracts.Providers", "Samples.AspNetCore.Data.Contracts.Providers\Samples.AspNetCore.Data.Contracts.Providers.csproj", "{8C83B67D-2BE8-433F-8053-68A5B5168DD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Data.Contracts.Providers", "Samples.AspNetCore.Data.Contracts.Providers\Samples.AspNetCore.Data.Contracts.Providers.csproj", "{8C83B67D-2BE8-433F-8053-68A5B5168DD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Data.Fake.ProviderBuilders", "Samples.AspNetCore.Data.Fake.ProviderBuilders\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj", "{3E0F33AA-F477-439E-AE64-545B5D6E7A76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Data.Fake.ProviderBuilders", "Samples.AspNetCore.Data.Fake.ProviderBuilders\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj", "{3E0F33AA-F477-439E-AE64-545B5D6E7A76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Data.Fake.Providers", "Samples.AspNetCore.Data.Fake.Providers\Samples.AspNetCore.Data.Fake.Providers.csproj", "{012CB5A6-7F5B-4B15-9F85-9A7420600832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Data.Fake.Providers", "Samples.AspNetCore.Data.Fake.Providers\Samples.AspNetCore.Data.Fake.Providers.csproj", "{012CB5A6-7F5B-4B15-9F85-9A7420600832}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Real", "Real", "{918B8D63-B129-4958-A5B9-4E6F89954D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.AspNetCore.Data.Real.Providers", "Samples.AspNetCore.Data.Real.Providers\Samples.AspNetCore.Data.Real.Providers.csproj", "{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.AspNetCore.Data.Real.Providers", "Samples.AspNetCore.Data.Real.Providers\Samples.AspNetCore.Data.Real.Providers.csproj", "{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,7 +97,6 @@ Global
 		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.DebugWithFake|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.DebugWithFake|Any CPU.Build.0 = Debug|Any CPU
 		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.DebugWithReal|Any CPU.ActiveCfg = DebugWithReal|Any CPU
 		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.DebugWithReal|Any CPU.Build.0 = DebugWithReal|Any CPU
 		{9CACFD5B-CDBF-4C62-AF76-7EE8AA239C63}.Release|Any CPU.ActiveCfg = Release|Any CPU

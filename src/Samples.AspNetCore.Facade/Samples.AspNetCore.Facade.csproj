@@ -46,6 +46,7 @@
     <PackageReference Include="Solid.Practices.Composition.Core" Version="1.2.1-rc2" />
     <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc2" />
     <PackageReference Include="Solid.Practices.Composition.Web" Version="1.2.1-rc2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>

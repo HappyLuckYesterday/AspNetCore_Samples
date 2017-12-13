@@ -15,6 +15,10 @@ namespace Samples.AspNetCore.Api
             _personService = personService;
         }
 
+        /// <summary>
+        /// Gets the collection of the persons.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<Person> Get()
         {
