@@ -39,13 +39,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc1" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
-    <PackageReference Include="Solid.Extensibility" Version="1.2.1-rc1" />
-    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc2" />
-    <PackageReference Include="Solid.Practices.Composition.Core" Version="1.2.1-rc2" />
-    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc2" />
-    <PackageReference Include="Solid.Practices.Composition.Web" Version="1.2.1-rc2" />
+    <PackageReference Include="Solid.Extensibility" Version="1.2.1-rc2" />
+    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc3" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="1.2.1-rc3" />
+    <PackageReference Include="LogoFX.Bootstrapping" Version="1.7.1-rc3" />
+    <PackageReference Include="Solid.Practices.Composition.Web" Version="1.2.1-rc3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="1.1.0" />
   </ItemGroup>
 

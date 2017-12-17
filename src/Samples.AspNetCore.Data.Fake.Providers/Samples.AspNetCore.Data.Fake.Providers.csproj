@@ -20,8 +20,8 @@
     <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Attest.Fake.Builders" Version="1.2.1-rc1" />
+    <PackageReference Include="Attest.Fake.Builders" Version="1.2.1-rc2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc1" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc2" />
   </ItemGroup>
 </Project>
