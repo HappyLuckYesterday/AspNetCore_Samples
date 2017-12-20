@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.AspNetCore.Api\Samples.AspNetCore.Api.csproj" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Fake.ProviderBuilders.Moq\Samples.AspNetCore.Data.Fake.ProviderBuilders.Moq.csproj" />
     <ProjectReference Include="..\Samples.AspNetCore.Data.Real.Providers\Samples.AspNetCore.Data.Real.Providers.csproj" Condition="'$(Configuration)'=='DebugWithReal'" />
     <ProjectReference Include="..\Samples.AspNetCore.Domain\Samples.AspNetCore.Domain.csproj" />
     <ProjectReference Include="..\Samples.AspNetCore.Data.Fake.Providers\Samples.AspNetCore.Data.Fake.Providers.csproj" Condition="'$(Configuration)'=='DebugWithFake'" />

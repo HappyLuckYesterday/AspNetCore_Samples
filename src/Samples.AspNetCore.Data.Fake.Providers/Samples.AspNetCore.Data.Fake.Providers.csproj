@@ -16,11 +16,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Providers\Samples.AspNetCore.Data.Contracts.Providers.csproj" />
-    <ProjectReference Include="..\Samples.AspNetCore.Data.Fake.ProviderBuilders\Samples.AspNetCore.Data.Fake.ProviderBuilders.csproj" />
     <ProjectReference Include="..\Samples.AspNetCore.Data.Contracts.Dto\Samples.AspNetCore.Data.Contracts.Dto.csproj" />
+    <ProjectReference Include="..\Samples.AspNetCore.Data.Fake.ProviderBuilders.Moq\Samples.AspNetCore.Data.Fake.ProviderBuilders.Moq.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Attest.Fake.Builders" Version="1.2.1-rc2" />
+    <PackageReference Include="LogoFX.Client.Data.Fake.ProviderBuilders" Version="1.1.1-rc2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
     <PackageReference Include="Solid.Practices.Modularity" Version="1.2.1-rc2" />
   </ItemGroup>
